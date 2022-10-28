@@ -1,401 +1,71 @@
-body {
-  background: #000000;
-  font-family: 'Stratos';
-  font-family: 'Stratos LC Web';
-  width: 100%;
-  overflow-x: hidden;
+@import "content.css";
+@import "layout.css";
+@import "reset.css";
+@font-face {
+    font-family: 'Stratos';
+    src: url('Stratos-BoldItalic.eot');
+    src: url('Stratos-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Stratos-BoldItalic.woff') format('woff'),
+        url('Stratos-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
 }
 
-.фон {
-  opacity: 30%;
+@font-face {
+    font-family: 'Stratos';
+    src: url('Stratos-LightItalic.eot');
+    src: url('Stratos-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Stratos-LightItalic.woff') format('woff'),
+        url('Stratos-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Light.eot');
+    src: local('Stratos LC Web Light'), local('StratosLCWeb-Light'),
+        url('StratosLCWeb-Light.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Light.woff2') format('woff2'),
+        url('StratosLCWeb-Light.woff') format('woff'),
+        url('StratosLCWeb-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
 }
 
-h1, h2, h3, p {
-  font-size: initial;
-  margin: 0;
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Bold.eot');
+    src: local('Stratos LC Web Bold'), local('StratosLCWeb-Bold'),
+        url('StratosLCWeb-Bold.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Bold.woff2') format('woff2'),
+        url('StratosLCWeb-Bold.woff') format('woff'),
+        url('StratosLCWeb-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
-.bigletters{
-  position: absolute;
-  width: 1374px;
-  height: 504px;
-  left: 273px;
-  top: 15px;
-  color: white;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 400px;
-  line-height: 504px;
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Medium.eot');
+    src: local('Stratos LC Web Medium'), local('StratosLCWeb-Medium'),
+        url('StratosLCWeb-Medium.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Medium.woff2') format('woff2'),
+        url('StratosLCWeb-Medium.woff') format('woff'),
+        url('StratosLCWeb-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
-.LightItalic{
-  position: absolute;
-  width: 923px;
-  height: 189px;
-  left: 498px;
-  top: 396px;
-  font-family: 'Stratos';
-  font-style: italic;
-  font-weight: 300;
-  font-size: 150px;
-  line-height: 189px;
-  color: #FFFFFF;
-}
-
-.kvadrat1{
-position: absolute;
-width: 1407px;
-height: 1407px;
-left: -48px;
-top: 704px;
-border: 20px solid #781111;
-}
-
-.kvadrat2{
-  position: absolute;
-  width: 991px;
-  height: 1488px;
-  left: 937px;
-  top: 2490px;
-  border: 20px solid #781111;
-}
-
-.kvadrat3{
-  position: absolute;
-  width: 1187px;
-  height: 1187px;
-  left: -18px;
-  top: 4211px;
-
-  border: 20px solid #781111;
-}
-
-.kvadrat4{
-  position: absolute;
-  width: 1187px;
-  height: 1695px;
-  left: 809px;
-  top: 5917px;
-
-  border: 20px solid #781111;
-}
-
-.kvadrat5{
-  position: absolute;
-  width: 1187px;
-  height: 1575px;
-  left: -87px;
-  top: 8083px;
-  border: 20px solid #781111;
-}
-
-.kvadrat6{
-  position: absolute;
-  width: 1534px;
-  height: 1323px;
-  left: 915px;
-  top: 10060px;
-  border: 20px solid #781111;
-}
-
-.text1{
-  position: absolute;
-  width: 102px;
-  height: 81px;
-  left: 909px;
-  top: 580px;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 81px;
-  color: #FFFFFF;
-}
-
-.grotesk{
-  position: absolute;
-  width: 1727.41px;
-  height: 254.45px;
-  left: 100.69px;
-  top: 743.65px;
-}
-
-.s{
-  position: absolute;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 64px;
-  line-height: 81px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 37px;
-  height: 81px;
-  left: 320px;
-  top: 1011px;
-}
-
-.podhod{
-  position: absolute;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 64px;
-  line-height: 81px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 302px;
-  height: 81px;
-  left: 863px;
-  top: 1011px;
-}
-
-.ok{
-  position: absolute;
-  width: 474px;
-  height: 81px;
-  left: 373px;
-  top: 1077px;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 81px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.ok2{
-  position: absolute;
-  width: 428px;
-  height: 81px;
-  left: 1181px;
-  top: 1077px;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 81px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.a-lot-of-stratos{
-  position: absolute;
-  width: 1968px;
-  height: 1343px;
-  left: -4px;
-  top: 1344px;
-}
-
-.O{
-  position: absolute;
-  width: 751px;
-  height: 806px;
-  left: 103px;
-  top: 2789px;
-}
-
-.osobenniy{
-  position: absolute;
-  width: 670px;
-  height: 121px;
-  left: 1013px;
-  top: 2798px;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
-  line-height: 121px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.text{
-  position: absolute;
-  width: 781px;
-  height: 629px;
-  left: 1013px;
-  top: 2980px;
-  font-family: 'Stratos LC Web';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 60px;
-  color: #FFFFFF;
-}
-
-.one{
-  position: absolute;
-  width: 712.24px;
-  height: 873px;
-  left: 603px;
-  top: 3482.94px;
-}
-
-.two{
-  position: absolute;
-  width: 566px;
-  height: 1010px;
-  left: 279px;
-  top: 3526px;
-}
-
-.three{
-  position: absolute;
-  width: 263px;
-  height: 1011px;
-  left: 1119px;
-  top: 7006px;
-}
-
-.four{
-  position: absolute;
-  width: 263px;
-  height: 1011px;
-  left: 1456px;
-  top: 7493px;
-}
-
-.BoldItalic{
-  position: absolute;
-  width: 1716px;
-  height: 378px;
-  left: 102px;
-  top: 4611px;
-  font-family: 'Stratos';
-  font-style: italic;
-  font-weight: 700;
-  font-size: 300px;
-  line-height: 378px;
-  color: #FFFFFF;
-}
-
-.first{
-  position: absolute;
-  width: 763px;
-  height: 921px;
-  left: 170px;
-  top: 5052px;
-}
-
-.second{
-  position: absolute;
-  width: 763px;
-  height: 921px;
-  left: 988px;
-  top: 5052px;
-
-}
-
-.id1{
-  position: absolute;
-  width: 757.48px;
-  height: 525.91px;
-  left: 177px;
-  top: 6038px;
-}
-
-.id2{
-  position: absolute;
-width: 727.18px;
-height: 464px;
-left: 1059px;
-top: 6351px;
-}
-
-.id3{
-  position: absolute;
-width: 735.01px;
-height: 479px;
-left: 163px;
-top: 6616.4px;
-}
-
-.paper{
-  position: absolute;
-width: 909px;
-height: 938px;
-left: 95px;
-top: 7272px;
-}
-
-.chek{
-  position: absolute;
-width: 1129px;
-height: 1418px;
-left: 347px;
-top: 8329px;
-}
-
-.big{
-  position: absolute;
-width: 1590px;
-height: 1836px;
-left: 165px;
-top: 9836px;
-}
-
-.logo{
-  position: absolute;
-width: 327px;
-height: 133px;
-left: 38px;
-top: 11770px;
-}
-
-.logo2{
-  position: absolute;
-width: 214px;
-height: 131px;
-left: 1648px;
-top: 11772px;
-}
-
-.end1{
-  position: absolute;
-width: 409px;
-height: 54px;
-left: 430px;
-top: 11850px;
-font-family: 'Stratos LC Web';
-font-style: normal;
-font-weight: 400;
-font-size: 50px;
-line-height: 107.1%;
-color: #FFFFFF;
-}
-
-.end21{
-  position: absolute;
-width: 313px;
-height: 39px;
-left: 974px;
-top: 11860px;
-font-family: 'Stratos LC Web';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 72px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
-}
-
-.end22{
-  position: absolute;
-width: 188px;
-height: 34px;
-left: 1324px;
-top: 11860px;
-font-family: 'Stratos LC Web';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 72px;
-display: flex;
-align-items: center;
-color: #FFFFFF;
+@font-face {
+    font-family: 'Stratos LC Web';
+    src: url('StratosLCWeb-Regular.eot');
+    src: local('Stratos LC Web'), local('StratosLCWeb-Regular'),
+        url('StratosLCWeb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('StratosLCWeb-Regular.woff2') format('woff2'),
+        url('StratosLCWeb-Regular.woff') format('woff'),
+        url('StratosLCWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
